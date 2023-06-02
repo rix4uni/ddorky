@@ -86,7 +86,13 @@ dorks = [
     f'site:{domain} intitle:"index of" /etc/shadow',
     f'site:{domain} allintitle:"ProjectDox Login"',
     f'intitle:index.of intext:log inurl:{domain}',
-    f'site:{domain} intitle:index of "wc.db"'
+    f'site:{domain} intitle:index of "wc.db"',
+    f'site:{domain} inurl:"/login.aspx" intitle:"user"',
+    f'site:{domain} inurl:"/login.aspx" intitle:"adminlogin"',
+    f'site:{domain} intitle:"PaperCut login"',
+    f'site:{domain} inurl:"/admin" intitle:"adminlogin"',
+    f'site:{domain} inurl:"/user" intitle:"userlogin"',
+    f'site:{domain} intitle:"SCM Manager" intext:1.60'
 ]
 
 for dork in dorks:
